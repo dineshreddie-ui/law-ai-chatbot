@@ -1,20 +1,75 @@
-<<<<<<< HEAD
-# React + Vite
+# ⚖️ Law AI Chatbot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered legal assistant chatbot built using React, Vite, and Groq API. The application provides legal information, maintains chat history, supports multiple conversations, and stores chats locally in the browser.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://your-vercel-url.vercel.app
 
-## React Compiler
+## 📂 GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/dineshreddie-ui/law-ai-chatbot
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# law-ai-chatbot
->>>>>>> bc82c5177262a07caa9e5b1733d6869cb3852747
+* AI-powered legal question answering
+* Multiple chat conversations
+* Persistent chat history using Local Storage
+* Create and delete chats
+* Legal-only response behavior
+* Educational disclaimer included in responses
+* Responsive user interface
+* Deployed on Vercel
+
+## 🛠️ Tech Stack
+
+* React
+* Vite
+* JavaScript
+* Tailwind CSS
+* Groq API
+* Vercel
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/dineshreddie-ui/law-ai-chatbot.git
+```
+
+Navigate to the project:
+
+```bash
+cd law-ai-chatbot
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file:
+
+```env
+VITE_GROQ_API_KEY=your_groq_api_key
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## 🌐 Deployment
+
+The application is deployed on Vercel using environment variables for secure API key management.
+
+## ⚠️ Disclaimer
+
+This chatbot provides educational legal information only and does not constitute professional legal advice. Users should consult a qualified legal professional for specific legal matters.
+
+## 👨‍💻 Author
+
+Dinesh Kumar
