@@ -1,5 +1,7 @@
 const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
+
+
 export async function askLawAI(userMessage) {
   const systemPrompt = `
 You are a Legal Assistant AI.
@@ -41,6 +43,14 @@ Rules:
   );
 
   const data = await response.json();
+
+  console.log("Groq Response:", data);
+
+  if (!response.ok) {
+    throw new Error(
+      data.error?.message || "Groq API request failed"
+    );
+  }
 
   return data.choices[0].message.content;
 }
